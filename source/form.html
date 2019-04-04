@@ -26,9 +26,76 @@
         </li>
       </ul>
     </nav>
-    <main class="form-main">
-    </main>
   </header>
+    <main class="form-main">
+      <div class="knit-for-order">
+        <h1 class="knit-for-order__heading">Вязание на заказ</h2>
+        <p class="knit-for-order__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      </div>
+      <form class="user-form" action="https://echo.htmlacademy.ru" method="post">
+        <span class="user-form__type">Тип</span>
+        <label class="user-form__radio-item">
+        <input class="user-form__radio-interior" type="radio" name="for-interior" value="interior">
+        <span class="user-form__radio-text">Аксессуар для интерьера</span>
+        </label>
+        <label class="user-form__radio-item">
+        <input class="user-form__radio-toy" type="radio" name="toy" value="child-toy">
+        <span class="user-form__radio-text">Детская игрушка</span>
+        </label>
+        <span class="user-form__color">Цвет</span>
+        <label class="user-form__color-item">
+        <input class="user-form__color-checkbox" type="checkbox" name="white" checked>
+        <span class="user-form__checkbox-text">Белый</span>
+        </label>
+        <label class="user-form__color-item">
+        <input class="user-form__color-checkbox" type="checkbox" name="grey"  checked>
+        <span class="user-form__checkbox-text">Серый</span>
+        </label>
+        <label class="user-form__color-item">
+        <input class="user-form__color-checkbox" type="checkbox" name="tiffany" >
+        <span class="user-form__checkbox-text">"Тиффани"</span>
+        </label>
+        <label class="user-form__color-item">
+        <input class="user-form__color-checkbox" type="checkbox" name="black" >
+        <span class="user-form__checkbox-text">Черный</span>
+        </label>
+        <label class="user-form__color-item">
+        <input class="user-form__color-checkbox" type="checkbox" name="pink" >
+        <span class="user-form__checkbox-text">Розовый</span>
+        </label>
+        <label class="user-form__color-item">
+        <input class="user-form__color-checkbox" type="checkbox" name="orange" >
+        <span class="user-form__checkbox-text">Оранжевый</span>
+        </label>
+        <span class="user-form__fio">Фио</span>
+        <label class="user-form__fio-item">
+          <span class="user-form__info">Имя:</span>
+          <input class="user-form__text-item" type="text" name="person-name" value="Введите ваше имя*">
+        </label>
+        <label class="user-form__fio-item">
+          <span class="user-form__info">Фамилия:</span>
+          <input class="user-form__text-item" type="text" name="surname" value="Укажите фамилию*">
+        </label>
+        <label class="user-form__fio-item">
+          <span class="user-form__info">Отчество</span>
+          <input class="user-form__text-item" type="text" name="patronymic" value="Отчество, если желаете">
+        </label>
+        <span class="user-form__number">Тел</span>
+        <label class="user-form__number-item">
+          <input class="user-name__contacts-item" type="text" name="phone" value="+7 XXX XXX XX XX*">
+        </label>
+        <span class="user-form__e-mail">e-mail</span>
+        <label class="user-form__e-mail-item">
+          <input class="user-name__contacts-item" type="text" name="e-mail" value="Ваш Email*">
+        </label>
+        <span class="user-form__extra">Доп</span>
+        <label class="user-form__extra-item">
+        <textarea class="user-form__extra-text" name="extra-text" placeholder="Опишите все ваши пожелания к заказу" required ></textarea>
+        </label>
+        <p class="user-form__required-slots">*Поля обязательны для заполнения</p>
+        <button class="user-form__send-order" type="button"> Отправить заказ</button>
+      </form>
+    </main>
   <footer class="page-footer">
     <div class="page-footer__social social">
       <ul class="social__list">
