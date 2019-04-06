@@ -8,23 +8,23 @@
 .rabbit-toy__caption,
 .basket-toy__caption,
 .big-basket-toy__caption {
-  @include font(bold,17px,24px);
+  @include font(bold, 17px, 24px);
 }
 
 .rabbit-toy__characteristics,
 .basket-toy__characteristics,
 .big-basket-toy__characteristics {
-  @include font(normal,13px,30px);
+  @include font(normal, 13px, 30px);
   color: #444444;
 }
 
 .rabbit-toy__price,
 .basket-toy__price,
 .big-basket-toy__price {
-  @include font(bold,15px,24px);
+  @include font(bold, 15px, 24px);
 }
 
 .making__order {
-  @include font(bold,17px,16px);
+  @include font(bold, 17px, 16px);
   color: #444444;
 }
