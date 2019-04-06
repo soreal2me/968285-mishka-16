@@ -1,6 +1,7 @@
 .contacts__heading {
   @include font(bold, 18px, 30px);
 }
+
 .contacts__e-mail,
 .contacts__e-mail-name,
 .contacts__adress,
@@ -8,6 +9,7 @@
   @include font(normal, 15px,30px);
   color: #444444;
 }
+
 .contacts__write-us {
   @include font(bold,18px,20px);
   color: #444444;
