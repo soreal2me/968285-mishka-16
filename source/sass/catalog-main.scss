@@ -1,7 +1,8 @@
 .catalog-main__caption {
+  @include font(bold, 27px, 30px);
+
   margin: 0;
   padding: 75px 30px 75px 30px;
-  @include font(bold, 27px, 30px);
   background-color: #f1f1f1;
 }
 
