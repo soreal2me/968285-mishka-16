@@ -11,14 +11,14 @@
 .user-form__radio-text,
 .user-form__checkbox-text,
 .user-form__info {
-  @include font(bold,17px,18px);
+  @include font(bold, 17px, 18px);
 }
 
 .user-form__required-slots {
-  @include font(normal,14px,16px);
+  @include font(normal, 14px, 16px);
 }
 
 .user-form__send-order {
-  @include font(bold,17px,16px);
+  @include font(bold, 17px, 16px);
   color: #444444;
 }

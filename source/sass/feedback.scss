@@ -1,5 +1,5 @@
 .feedback__heading {
-  @include font(bold,25px,30px);
+  @include font(bold, 25px, 30px);
 }
 
 .feedback__description {
@@ -13,6 +13,6 @@
 }
 
 .feedback__write {
-  @include font(bold,18px,20px);
+  @include font(bold, 18px, 20px);
   color: #444444;
 }
