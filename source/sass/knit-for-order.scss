@@ -1,0 +1,8 @@
+.knit-for-order__heading {
+  @include font(bold, 27px, 30px);
+  background-color: #f1f1f1;
+}
+
+.knit-for-order__text {
+  @include font(normal, 13px, 24px);
+}

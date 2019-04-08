@@ -1,0 +1,31 @@
+.catalog-main__caption {
+  @include font(bold, 27px, 30px);
+
+  margin: 0;
+  padding: 75px 30px 75px 30px;
+  background-color: #f1f1f1;
+}
+
+.rabbit-toy__caption,
+.basket-toy__caption,
+.big-basket-toy__caption {
+  @include font(bold, 17px, 24px);
+}
+
+.rabbit-toy__characteristics,
+.basket-toy__characteristics,
+.big-basket-toy__characteristics {
+  @include font(normal, 13px, 30px);
+  color: #444444;
+}
+
+.rabbit-toy__price,
+.basket-toy__price,
+.big-basket-toy__price {
+  @include font(bold, 15px, 24px);
+}
+
+.making__order {
+  @include font(bold, 17px, 16px);
+  color: #444444;
+}

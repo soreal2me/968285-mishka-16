@@ -1,0 +1,11 @@
+.about-us {
+  padding: 30px 30px 60px 30px;
+}
+
+.about-us__materials {
+  @include font(bold, 25px, 30px);
+}
+
+.about-us__heading {
+  margin: 0;
+}

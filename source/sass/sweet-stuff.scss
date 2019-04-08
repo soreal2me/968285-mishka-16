@@ -1,0 +1,9 @@
+.sweet-stuff__description {
+  @include font(bold, 27px, 30px);
+  margin: 0;
+}
+
+.goods-interior__link,
+.goods-toys__link {
+  @include font(bold, 19px, 24px);
+}
