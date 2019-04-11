@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Мишка: Главная</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -12,6 +13,7 @@
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <div class="main-nav__wrapper">
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
           <a class="site-list__link" href="#">Каталог товаров</a>
@@ -25,7 +27,17 @@
         <li class="site-list__item">
           <a class="site-list__link" href="#">Корзина</a>
         </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">Новые поступления</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">Распродажа</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">Бесплатная доставка по России</a>
+        </li>
       </ul>
+    </div>
     </nav>
   </header>
     <main class="catalog-main">
@@ -33,21 +45,27 @@
       <ul class="product-catalog">
         <li class="product-catalog__item rabbit-toy">
           <img class="rabbit-toy__picture" src="http://via.placeholder.com/260x195" width="260" height="195" alt="Зайчик-попрыгайчик">
-          <p class="rabbit-toy__caption">Зайчик-попрыгайчик</p>
-          <p class="rabbit-toy__characteristics">Рост 30 см, вес 200 г</p>
-          <p class="rabbit-toy__price">1200 руб.</p>
+          <div class="rabbit-toy__wrapper">
+          <p class="rabbit-toy__caption caption">Зайчик-попрыгайчик</p>
+          <p class="rabbit-toy__characteristics characteristics">Рост 30 см, вес 200 г</p>
+          <p class="rabbit-toy__price price">1200 руб.</p>
+        </div>
         </li>
         <li class="product-catalog__item basket-toy">
           <img class="basket-toy__picture" src="http://via.placeholder.com/260x195" width="260" height="195" alt="Корзинка для белья">
-          <p class="basket-toy__caption">Корзинка для белья</p>
-          <p class="basket-toy__characteristics">Диаметр 15 см, высота 10 см</p>
-          <p class="basket-toy__price">690 руб.</p>
+          <div class="basket-toy__wrapper">
+          <p class="basket-toy__caption caption">Корзинка для белья</p>
+          <p class="basket-toy__characteristics characteristics">Диаметр 15 см, высота 10 см</p>
+          <p class="basket-toy__price price">690 руб.</p>
+        </div>
         </li>
         <li class="product-catalog__item big-basket-toy">
           <img class="big-basket-toy__picture" src="http://via.placeholder.com/260x195" width="260" height="195" alt="Большая корзинка для игрушек">
-          <p class="big-basket-toy__caption">Большая корзинка для игрушек</p>
-          <p class="big-basket-toy__characteristics">Диаметр 30 см, высота 30 см</p>
-          <p class="big-basket-toy__price">1500 руб.</p>
+          <div class="big-basket-toy__wrapper">
+          <p class="big-basket-toy__caption caption">Большая корзинка для игрушек</p>
+          <p class="big-basket-toy__characteristics characteristics">Диаметр 30 см, высота 30 см</p>
+          <p class="big-basket-toy__price price">1500 руб.</p>
+        </div>
         </li>
       </ul>
       <section class="making">

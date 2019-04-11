@@ -3,7 +3,84 @@
   margin: 0;
 }
 
+.goods {
+  display: flex;
+  flex-direction: column;
+}
+
 .goods-interior__link,
 .goods-toys__link {
   @include font(bold, 19px, 24px);
+
+  display: block;
+  width: 320px;
+  height: 103px;
+}
+
+.sweet-stuff {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+.goods-toys,
+.goods-interior {
+  width: 320px;
+  height: 103px;
+}
+
+@media (min-width: $tablet-width) {
+  .sweet-stuff {
+    width: $tablet-width;
+  }
+
+  .goods {
+    flex-direction: row;
+  }
+
+  .goods-toys,
+  .goods-interior {
+    width: 334px;
+    height: 119px;
+  }
+
+  .sweet-stuff__mishka-background {
+    width: $tablet-width;
+    height: 746px;
+  }
+
+  .goods-toys__link,
+  .goods-interior__link {
+    display: block;
+    width: 334px;
+    height: 119px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .sweet-stuff {
+    width: $desktop-width;
+  }
+
+  .sweet-stuff__mishka-background {
+    width: $desktop-width;
+    height: 746px;
+  }
+
+  .goods {
+    flex-direction: row;
+  }
+
+  .goods-toys,
+  .goods-interior {
+    width: 525px;
+    height: 119px;
+  }
+
+  .goods-toys__link,
+  .goods-interior__link {
+    display: block;
+    width: 525px;
+    height: 119px;
+  }
 }

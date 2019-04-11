@@ -1,3 +1,9 @@
 .developed-by__caption {
   @include font(bold, 19px, 18px);
 }
+
+.developed-by__link {
+  display: block;
+  height: 34px;
+  width: 27px;
+}
