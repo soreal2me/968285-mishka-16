@@ -1,11 +1,8 @@
 .product-catalog {
-  padding: 30px;
-}
-
-.product-catalog {
   list-style: none;
   margin: 0;
   padding: 0;
+  padding: 30px;
 }
 
 .product-catalog__item {
@@ -107,7 +104,6 @@
   .product-catalog__item {
     flex-direction: row;
   }
-
 }
 
 @media (min-width: $desktop-width) {
