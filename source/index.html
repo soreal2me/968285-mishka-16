@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Мишка: Главная</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -12,6 +13,7 @@
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <div class="main-nav__wrapper">
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
           <a href="#">Каталог товаров</a>
@@ -25,7 +27,17 @@
         <li class="site-list__item">
           <a href="#">Корзина</a>
         </li>
+        <li class="site-list__item">
+          <a href="#">Новые поступления</a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">Распродажа</a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">Бесплатная доставка по России</a>
+        </li>
       </ul>
+    </div>
     </nav>
   </header>
   <main class="page-main">
@@ -33,14 +45,17 @@
       <h1 class="visually-hidden">Товары</h1>
       <img class="sweet-stuff__mishka-background" src="http://via.placeholder.com/575x373" alt="mishka-background" width="575" height="373">
       <p class="sweet-stuff__description">Милые штуки ручной работы для дома</p>
+      <div class="goods">
       <div class="goods-interior">
         <a class="goods-interior__link" href="#">Предметы интерьера</a>
       </div>
       <div class="goods-toys">
         <a class="goods-toys__link" href="#">Детские игрушки</a>
       </div>
+      </div>
     </section>
     <section class="week-item">
+      <div class="week-item__description-column">
       <h2 class="week-item__name">Вязаные корзинки</h2>
       <p class="week-item__importance">Товар недели</p>
       <p class="week-item__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
@@ -58,9 +73,10 @@
           <td class="knit-basket__height-choise">15 см</td>
         </tr>
       </table>
-      <img class="week-item__item-picture" src="http://via.placeholder.com/260x315" alt="Товар недели: вязаные корзинки" width="260" height="315">
       <p class="week-item__price">Цена: 990 руб.</p>
       <button class="week-item__buy" type="button">Заказать</button>
+      </div>
+      <img class="week-item__item-picture" src="http://via.placeholder.com/260x315" alt="Товар недели: вязаные корзинки" width="260" height="315">
     </section>
     <section class="about-us">
       <h2 class="about-us__heading">Коротко о нас:</h2>

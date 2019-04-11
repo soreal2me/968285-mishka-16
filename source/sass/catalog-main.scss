@@ -1,10 +1,15 @@
 .catalog-main__caption {
   @include font(bold, 27px, 30px);
 
+  display: block;
+  width: 260px;
   margin: 0;
+  margin-bottom: 30px;
   padding: 75px 30px 75px 30px;
   background-color: #f1f1f1;
 }
+
+
 
 .rabbit-toy__caption,
 .basket-toy__caption,
@@ -28,4 +33,20 @@
 .making__order {
   @include font(bold, 17px, 16px);
   color: #444444;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-main__caption {
+    width: 370px;
+    margin-bottom: 80px;
+    padding: 100px 200px 80px 200px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-main__caption {
+    width: 455px;
+    margin-bottom: 130px;
+    padding: 105px 345px 100px 350px;
+  }
 }

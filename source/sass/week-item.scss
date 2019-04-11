@@ -2,6 +2,14 @@
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 36px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+.week-item__description-column {
+  display: flex;
+  flex-direction: column;
 }
 
 .week-item__name {
@@ -27,8 +35,39 @@
 .week-item__price {
   @include font(bold, 17px, 24px);
   color: #444444;
+  margin: 0;
 }
+
 
 .week-item__buy {
   color: #444444;
+}
+
+@media (min-width: $tablet-width) {
+  .week-item {
+    width: $tablet-width;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+  }
+
+
+  .week-item__description-column {
+    margin-right: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .week-item {
+    width: $desktop-width;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+  }
+
+
+  .week-item__description-column {
+    margin-right: 58px;
+    width: 700px
+  }
 }
