@@ -12,9 +12,7 @@
   @include font(bold, 19px, 24px);
 
   display: block;
-}
 
-.goods-toys__link {
   color: #ffffff;
   background-color: #56c3b2;
 
@@ -49,14 +47,13 @@
     width: 111px;
   }
 
-  .goods-toys__link::after  {
+  .goods-toys__link::after {
     right: 35px;
     top: 30px;
   }
 }
 
-@media (min-width:$desktop-width) {
-
+@media (min-width: $desktop-width) {
 
   .goods-toys {
     width: 525px;
@@ -66,7 +63,6 @@
   .goods-toys__link {
     display: block;
 
-    padding: 0;
     padding: 30px 377px 30px 37px;
   }
 }

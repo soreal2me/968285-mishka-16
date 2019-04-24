@@ -58,7 +58,6 @@
   @include font(bold, 15px, 24px);
 
   color: #000000;
-
 }
 
 @media (min-width: $tablet-width) {
@@ -67,7 +66,7 @@
   }
 
   .main-nav__toggle {
-  display: none;
+    display: none;
   }
 
   .main-nav__sale-list li:nth-child(1),
@@ -82,9 +81,8 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .main-nav__toggle {
-  display: none;
+    display: none;
   }
 
   .main-nav__wrapper {
@@ -120,7 +118,7 @@
   }
 
   .main-nav--nojs .main-nav__toggle {
-  display: none;
+    display: none;
   }
 
   .main-nav--nojs .main-nav__wrapper {
@@ -135,5 +133,4 @@
   .site-list__icon-basket {
     display: none;
   }
-
 }

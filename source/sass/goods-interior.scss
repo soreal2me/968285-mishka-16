@@ -51,8 +51,7 @@
   }
 }
 
-@media (min-width:$desktop-width) {
-
+@media (min-width: $desktop-width) {
 
   .goods-interior {
     width: 525px;
@@ -62,7 +61,6 @@
   .goods-interior__link {
     display: block;
 
-    padding: 0;
     padding: 30px 377px 30px 37px;
   }
 }

@@ -1,7 +1,5 @@
-@media (min-width:$tablet-width) {
-
+@media (min-width: $tablet-width) {
   .goods {
-
     position: absolute;
     bottom: -34px;
     left: 50px;
@@ -19,8 +17,7 @@
   }
 }
 
-@media (min-width:$desktop-width) {
-
+@media (min-width: $desktop-width) {
   .goods::after {
     @include pseudo(1150px, 34px);
 

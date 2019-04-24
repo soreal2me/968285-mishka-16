@@ -13,12 +13,14 @@
 .basket-toy__caption,
 .big-basket-toy__caption {
   @include font(bold, 17px, 24px);
+
 }
 
 .rabbit-toy__characteristics,
 .basket-toy__characteristics,
 .big-basket-toy__characteristics {
   @include font(normal, 13px, 30px);
+
   color: #444444;
 }
 
@@ -26,10 +28,12 @@
 .basket-toy__price,
 .big-basket-toy__price {
   @include font(bold, 15px, 24px);
+
 }
 
 .making__order {
   @include font(bold, 17px, 16px);
+
   color: #444444;
 }
 
@@ -42,9 +46,7 @@
     padding: 100px 200px 80px 200px;
 
     position: relative;
-
   }
-
 
   .catalog-main__caption::after {
     @include pseudo(770px, 24px);

@@ -33,7 +33,7 @@
   border-bottom: 1px solid #ececec;
 }
 
-@media (min-width:$tablet-width) {
+@media (min-width: $tablet-width) {
   .site-list {
     display: flex;
     flex-wrap: wrap;
@@ -59,6 +59,7 @@
 
     order: -1;
   }
+
   .site-list__item--search a {
     width: inherit;
     height: inherit;
@@ -66,7 +67,6 @@
 
   .site-list__icon-search {
     @include posabs(36px, 33px);
-
   }
 
   .site-list__item--katalog {
@@ -108,7 +108,6 @@
     background-color: transparent;
 
     z-index: 10;
-
   }
 
   .main-nav__list li:nth-child(2) {
@@ -130,8 +129,7 @@
   }
 }
 
-@media (min-width:$desktop-width) {
-
+@media (min-width: $desktop-width) {
   .main-nav__sale-list li:nth-child(1) {
     display: block;
     position: absolute;
