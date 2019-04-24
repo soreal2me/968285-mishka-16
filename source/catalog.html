@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Мишка: Главная</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
   <header class="page-header">
     <a class="page-header__logo">
@@ -165,9 +163,7 @@
   <script>
     var navMain = document.querySelector('.main-nav');
     var navToggle = document.querySelector('.main-nav__toggle');
-
     navMain.classList.remove('main-nav--nojs');
-
     navToggle.addEventListener('click', function() {
       if (navMain.classList.contains('main-nav--closed')) {
         navMain.classList.remove('main-nav--closed');
@@ -179,5 +175,4 @@
     });
   </script>
 </body>
-
 </html>
