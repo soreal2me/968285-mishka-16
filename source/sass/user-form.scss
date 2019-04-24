@@ -5,6 +5,7 @@
 .user-form__e-mail,
 .user-form__extra {
   @include font(bold, 17px, 16px);
+
   color: #63d1bb;
 }
 
@@ -20,5 +21,6 @@
 
 .user-form__send-order {
   @include font(bold, 17px, 16px);
+
   color: #444444;
 }
