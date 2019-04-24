@@ -2,11 +2,18 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
+  padding-left: 30px;
+  padding-right: 30px;
+  display: inline-block;
 }
 
 .product-catalog__item {
   display: flex;
   flex-direction: column;
+
+  border: 1px solid #ececec;
+  margin-bottom: 30px;
 }
 
 .caption,
@@ -21,26 +28,26 @@
 
 .rabbit-toy__caption {
   display: block;
-  width: 200px;
-  padding-right: 35px;
-  padding-left: 25px;
+  width: 180px;
+  padding-left: 28px;
+  padding-right: 52px;
   margin-bottom: 10px;
 }
 
 .rabbit-toy__characteristics {
   display: block;
   width: 130px;
-  padding-right: 100px;
   padding-left: 30px;
+  padding-right: 100px;
   padding-bottom: 50px;
 }
 
 .rabbit-toy__price {
   display: block;
   width: 75px;
-  margin-bottom: 25px;
-  padding-right: 155px;
   padding-left: 30px;
+  padding-right: 155px;
+  padding-bottom: 25px;
 }
 
 .basket-toy__picture {
@@ -66,9 +73,9 @@
 .basket-toy__price {
   display: block;
   width: 60px;
-  margin-bottom: 25px;
   padding-right: 170px;
   padding-left: 30px;
+  padding-bottom: 25px;
 }
 
 .big-basket-toy__picture {
@@ -94,15 +101,101 @@
 .big-basket-toy__price {
   display: block;
   width: 75px;
-  margin-bottom: 25px;
+  padding-bottom: 25px;
   padding-right: 160px;
   padding-left: 25px;
 }
 
 @media (min-width: $tablet-width) {
+  .product-catalog {
+    padding: 0 50px 0 50px;
+  }
+
   .product-catalog__item {
     flex-direction: row;
+
+    margin-bottom: 55px;
   }
+
+  .rabbit-toy__picture {
+    margin: 0;
+  }
+
+  .rabbit-toy__caption,
+  .basket-toy__caption,
+  .big-basket-toy__caption {
+    @include font(bold, 20px, 24px);
+  }
+
+  .rabbit-toy__characteristics,
+  .basket-toy__characteristics,
+  .big-basket-toy__characteristics {
+    @include font(normal, 15px, 30px);
+  }
+
+  .rabbit-toy__price,
+  .basket-toy__price,
+  .big-basket-toy__price {
+    @include font(bold, 17px, 24px);
+  }
+
+  .rabbit-toy__caption {
+    width: 235px;
+
+    margin: 0;
+    padding: 25px 77px 25px 25px;
+  }
+
+  .rabbit-toy__characteristics {
+    width: 155px;
+
+    padding: 0 150px 200px 25px;
+  }
+
+  .rabbit-toy__price {
+    width: 90px;
+
+    padding: 0 215px 25px 25px;
+  }
+
+  .basket-toy__caption {
+    width: 215px;
+
+    margin: 0;
+    padding: 25px 77px 25px 25px;
+  }
+
+  .basket-toy__characteristics {
+    width: 205px;
+
+    padding: 0 150px 200px 25px;
+  }
+
+  .basket-toy__price {
+    width: 90px;
+
+    padding: 0 215px 25px 25px;
+  }
+
+  .big-basket-toy__caption {
+    width: 205px;
+
+    margin: 0;
+    padding: 25px 77px 25px 25px;
+  }
+
+  .big-basket-toy__characteristics {
+    width: 215px;
+
+    padding: 0 150px 200px 25px;
+  }
+
+  .big-basket-toy__price {
+    width: 90px;
+
+    padding: 0 215px 25px 25px;
+  }
+
 }
 
 @media (min-width: $desktop-width) {
@@ -116,9 +209,78 @@
 
   .product-catalog__item {
     flex-direction: column;
+    justify-content: space-between;
+
   }
 
   .product-catalog {
     display: flex;
+  }
+
+  .rabbit-toy__caption {
+    width: 235px;
+
+    margin: 0;
+    padding: 25px 55px 15px 25px;
+  }
+
+  .rabbit-toy__characteristics {
+    width: 155px;
+
+    padding: 0 150px 60px 25px;
+
+    justify-content: flex-end;
+  }
+
+  .rabbit-toy__price {
+    width: 90px;
+
+    padding: 0 215px 25px 25px;
+  }
+
+  .basket-toy__caption {
+    width: 215px;
+
+    margin: 0;
+    padding: 25px 77px 15px 25px;
+  }
+
+  .basket-toy__picture {
+    margin: 0;
+  }
+
+  .basket-toy__characteristics {
+    width: 205px;
+
+    padding: 0 150px 60px 25px;
+  }
+
+  .basket-toy__price {
+    width: 90px;
+
+    padding: 0 215px 25px 25px;
+  }
+
+  .big-basket-toy__picture {
+    margin: 0;
+  }
+
+  .big-basket-toy__caption {
+    width: 205px;
+
+    margin: 0;
+    padding: 25px 90px 15px 25px;
+  }
+
+  .big-basket-toy__characteristics {
+    width: 215px;
+
+    padding: 0 150px 37px 25px;
+  }
+
+  .big-basket-toy__price {
+    width: 90px;
+
+    padding: 0 215px 25px 25px;
   }
 }

@@ -3,3 +3,21 @@
   font-size: $size;
   line-height: $height;
 }
+
+@mixin pseudo($width, $height) {
+  content: "";
+
+  position: absolute;
+
+  width: $width;
+  height: $height;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+@mixin posabs($top, $left) {
+  position: absolute;
+
+  top: $top;
+  left: $left;
+}

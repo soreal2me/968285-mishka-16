@@ -1,4 +1,13 @@
 .knit-basket {
   @include font(normal, 15px, 20px);
+
   color: #444444;
+
+}
+
+.knit-basket td {
+  border-bottom: 1px solid #ececec;
+
+  padding-bottom: 10px;
+  padding-top: 5px;
 }

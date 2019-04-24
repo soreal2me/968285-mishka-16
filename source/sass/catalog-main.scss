@@ -2,10 +2,10 @@
   @include font(bold, 27px, 30px);
 
   display: block;
-  width: 260px;
+  width: 225px;
   margin: 0;
   margin-bottom: 30px;
-  padding: 75px 30px 75px 30px;
+  padding: 75px 47px 75px 47px;
   background-color: #f1f1f1;
 }
 
@@ -35,16 +35,39 @@
 
 @media (min-width: $tablet-width) {
   .catalog-main__caption {
-    width: 370px;
+    @include font(bold, 43px, 50px);
+
+    width: 360px;
     margin-bottom: 80px;
     padding: 100px 200px 80px 200px;
+
+    position: relative;
+
+  }
+
+
+  .catalog-main__caption::after {
+    @include pseudo(770px, 24px);
+
+    background-image: url("../img/bg-zigzag-fill.svg");
+    bottom: -5px;
+    left: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .catalog-main__caption {
     width: 455px;
+
     margin-bottom: 130px;
     padding: 105px 345px 100px 350px;
+  }
+
+  .catalog-main__caption::after {
+    @include pseudo(1150px, 34px);
+
+    background-image: url("../img/bg-zigzag-fill.svg");
+    bottom: -10px;
+    left: 0;
   }
 }

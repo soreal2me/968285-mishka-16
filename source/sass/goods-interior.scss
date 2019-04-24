@@ -1,1 +1,68 @@
-/*Пока пусто, Тревис не пускает пустые файлы*/
+.goods-interior {
+  width: 320px;
+  height: 103px;
+}
+
+.goods-interior__link {
+  @include font(bold, 19px, 24px);
+
+  display: block;
+
+  color: #ffffff;
+  background-color: #63d1bb;
+
+  padding: 30px 185px 30px 29px;
+
+  position: relative;
+}
+
+.goods-interior__link::after {
+  @include pseudo(40px, 42px);
+
+
+  right: 36px;
+  top: 23px;
+
+
+  background-image: url("../img/icon-interior.svg");
+}
+
+@media (min-width: $tablet-width) {
+  .goods-interior {
+
+    width: 334px;
+    height: 119px;
+  }
+
+  .goods-interior__link {
+    @include font(bold, 20px, 30px);
+
+    padding: 30px 187px 30px 37px;
+
+    display: block;
+
+    width: 111px;
+  }
+
+  .goods-interior__link::after {
+    height: 62px;
+
+    top: 30px;
+  }
+}
+
+@media (min-width:$desktop-width) {
+
+
+  .goods-interior {
+    width: 525px;
+    height: 119px;
+  }
+
+  .goods-interior__link {
+    display: block;
+
+    padding: 0;
+    padding: 30px 377px 30px 37px;
+  }
+}

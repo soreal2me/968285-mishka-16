@@ -1,24 +1,129 @@
 .about-us {
-  padding: 30px 30px 60px 30px;
+  display: inline-block;
+
+  position: relative;
+
+  padding: 30px 52px 60px 30px;
 }
 
 .about-us__materials {
-  @include font(bold, 25px, 30px);
+  @include font(bold, 17px, 20px);
+
+  position: relative;
 }
 
 .about-us__heading {
+  display: inline-block;
+
   margin: 0;
+
+  padding-bottom: 85px;
+}
+
+.about-us__item {
+  position: relative;
+}
+
+.about-us__icon-flower {
+  @include posabs(-60px, 10px)
+}
+
+.about-us__icon-money  {
+  @include posabs(-55px, 0)
+}
+
+.about-us__icon-heart  {
+  @include posabs(-50px, 8px)
+}
+
+.about-us__icon-ball  {
+  @include posabs(-55px, 3px)
+}
+
+.about-us__icon-rocket  {
+  @include posabs(-53px, -7px)
+}
+
+.about-us__icon-gift  {
+  @include posabs(-55px, 2px)
 }
 
 .about-us__advantages {
   margin: 0;
+
   padding: 0;
+
   list-style-type: none;
 }
+
+.about-us__advantages p {
+  display: inline-block;
+
+  margin: 0;
+
+  padding-bottom: 85px;
+}
+
+.about-us__item .about-us__present {
+  padding: 0;
+}
+
 
 @media (min-width: $tablet-width) {
   .about-us {
     padding: 50px 50px 75px 50px;
+  }
+
+  .about-us__heading {
+    @include font(bold, 43px, 50px);
+
+    padding-bottom: 105px;
+  }
+
+  .about-us__advantages {
+    width: 668px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
+  .about-us__advantages p {
+    @include font(bold, 20px, 22px);
+
+    padding-bottom: 100px;
+  }
+
+  .about-us__item  {
+    width: 50%;
+  }
+
+  .about-us__materials {
+    width: 200px;
+  }
+
+  .about-us__style {
+    width: 230px;
+  }
+
+  .about-us__likes {
+    width: 210px;
+  }
+
+  .about-us__sewed {
+    width: 250px;
+  }
+
+  .about-us__present {
+    width: 230px;
+  }
+
+  .about-us__item .about-us__present {
+    padding: 0;
+  }
+
+  .about-us__item .about-us__support {
+    padding: 0;
   }
 }
 
@@ -26,4 +131,5 @@
   .about-us {
     padding: 50px 270px 75px 225px;
   }
+
 }

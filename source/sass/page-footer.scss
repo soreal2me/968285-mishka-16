@@ -9,17 +9,35 @@
 }
 
 .social__list {
-  width: 320px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 140px;
   height: 80px;
+
   margin: 0;
+
   padding: 0;
+  padding-left: 90px;
+  padding-right: 90px;
+
   list-style: none;
+
+}
+
+.social__item {
+  display: inline-block;
 }
 
 .developed-by {
-  width: 180px;
-  padding: 25px 70px 20px 70px;
+  width: 260px;
+  padding: 25px 30px 20px 30px;
   display: flex;
+
+  justify-content: center;
+
+  position: relative;
 }
 
 .developed-by__caption {
@@ -27,8 +45,18 @@
   margin-right: 30px;
 }
 
+@media (max-width: $mobile-width-only) {
+  .developed-by::before {
+    @include pseudo(260px, 1px);
+
+    background-image: url("../img/divider.png");
+    top: 0;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .page-footer {
+    display: flex;
     width: $tablet-width;
   }
 
@@ -44,31 +72,15 @@
   }
 
   .social__list {
-    width: 250px;
-    /*временно*/
+    width: 145px;
     min-height: 144px;
+
+    padding: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-footer {
     width: $desktop-width;
-  }
-
-  .social {
-    flex-direction: row-reverse;
-  }
-
-  .developed-by {
-    width: 400px;
-    padding: 0;
-    padding-top: 60px;
-    padding-bottom: 50px;
-  }
-
-  .social__list {
-    width: 350px;
-    /*временно*/
-    min-height: 144px;
   }
 }
