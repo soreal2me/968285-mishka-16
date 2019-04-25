@@ -1,3 +1,8 @@
+.developed-by {
+  display: flex;
+  align-items: center;
+}
+
 .developed-by__caption {
   @include font(bold, 19px, 18px);
 }
@@ -6,4 +11,21 @@
   display: block;
   height: 34px;
   width: 27px;
+}
+
+@media (min-width: $tablet-width) {
+  .developed-by {
+    width: 180px;
+    height: 34px;
+
+    padding: 58px 51px 51px 85px;
+
+    order: -2;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .developed-by {
+    padding: 58px 50px 51px 275px;
+  }
 }

@@ -1,13 +1,12 @@
 .page-header {
   display: flex;
-  padding-top: 22px;
-  padding-bottom: 22px;
-  padding-left: 116px;
-  padding-right: 32px;
+  position: relative;
 }
 
 .page-header__logo {
-  display: block;
+  position: absolute;
+  top: 22px;
+  left: 116px;
   width: 86px;
   height: 35px;
   margin-right: 67px;
@@ -15,21 +14,32 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
+    width: $tablet-width;
     padding: 0;
   }
 
   .page-header__logo {
-    width: 113px;
-    height: 46px;
+    position: static;
+
+    padding: 22px 210px 20px 50px;
+    margin: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
+    display: static;
     padding: 0;
   }
 
   .page-header__logo {
+    position: absolute;
+
+    padding: 0;
+
+    top: 10px;
+    left: 500px;
+
     width: 149px;
     height: 72px;
   }

@@ -1,0 +1,20 @@
+.footer-logo {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .footer-logo {
+    display: block;
+
+    padding: 50px 160px 58px 50px;
+
+    order: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer-logo {
+
+    padding: 50px 350px 58px 50px;
+  }
+}
