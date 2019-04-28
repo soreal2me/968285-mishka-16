@@ -2,10 +2,10 @@
   @include font(bold, 27px, 30px);
 
   display: block;
-  width: 225px;
+  width: 240px;
   margin: 0;
   margin-bottom: 30px;
-  padding: 75px 47px 75px 47px;
+  padding: 75px 40px 75px 40px;
   background-color: #f1f1f1;
 }
 
@@ -39,15 +39,15 @@
   .catalog-main__caption {
     @include font(bold, 43px, 50px);
 
-    width: 360px;
+    width: 376px;
     margin-bottom: 80px;
-    padding: 100px 200px 80px 200px;
+    padding: 100px 196px 80px 200px;
 
     position: relative;
   }
 
   .catalog-main__caption::after {
-    @include pseudo(770px, 24px);
+    @include pseudo(772px, 24px);
 
     background-image: url("../img/bg-zigzag-fill.svg");
     bottom: -5px;
@@ -57,10 +57,11 @@
 
 @media (min-width: $desktop-width) {
   .catalog-main__caption {
-    width: 455px;
+    @include font(bold, 53px, 57px);
+    width: 465px;
 
     margin-bottom: 130px;
-    padding: 105px 345px 100px 350px;
+    padding: 105px 335px 100px 350px;
   }
 
   .catalog-main__caption::after {
