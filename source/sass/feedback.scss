@@ -1,15 +1,32 @@
+.feedback {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 .feedback__heading {
   @include font(bold, 25px, 30px);
+
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 .feedback__description {
   @include font(normal, 15px, 30px);
   color: #444444;
+
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.feedback__caption {
+  margin-bottom: 10px;
 }
 
 .feedback__name-link {
   font-weight: 400;
   color: #444444;
+
+  margin-bottom: 5px;
 }
 
 .feedback__write {
