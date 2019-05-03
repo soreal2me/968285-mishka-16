@@ -1,1 +1,9 @@
-/*Пока пусто, Тревис не пускает пустые файлы*/
+.form-main {
+  width: 320px;
+}
+
+@media (min-width: $tablet-width) {
+  .form-main {
+    width: 768px;
+  }
+}

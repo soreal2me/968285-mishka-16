@@ -1,0 +1,21 @@
+.button-order {
+  padding: 0;
+  border: none;
+  background-color: #ffffff;
+
+  width: 192px;
+  height: 52px;
+  border: 2px solid #444444;
+}
+
+@media (min-width: $tablet-width) {
+  .button-order {
+    width: 584px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button-order {
+    width: 230px;
+  }
+}

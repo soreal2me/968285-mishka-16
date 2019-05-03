@@ -1,3 +1,10 @@
+.user-form {
+  padding: 0 30px;
+   display: inline-block;
+
+   width: 260px;
+}
+
 .user-form__type,
 .user-form__color,
 .user-form__fio,
@@ -23,4 +30,12 @@
   @include font(bold, 17px, 16px);
 
   color: #444444;
+}
+
+@media (min-width: $tablet-width) {
+  .user-form {
+    width: 768px;
+    padding: 0;
+  }
+
 }

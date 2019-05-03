@@ -1,0 +1,23 @@
+.user-form__wrapper-color {
+
+  display: flex;
+  flex-direction: column;
+
+  width: 260px;
+}
+
+@media (min-width: $tablet-width) {
+  .user-form__wrapper-color {
+    width: 668px;
+    padding: 0 50px;
+
+    background-color: #f1f1f1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-form__wrapper-color {
+    width: 850px;
+    padding: 50px 190px 50px 110px;
+  }
+}

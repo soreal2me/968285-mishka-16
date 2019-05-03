@@ -3,11 +3,12 @@
 @import "opensans-font.scss";
 @import "base.scss";
 @import "button-slide.scss";
+@import "button-order.scss";
 @import "button-write.scss";
 @import "visually-hidden.scss";
 @import "sweet-stuff.scss";
 @import "week-item.scss";
-@import "video-block__item.scss";
+@import "video-block.scss";
 @import "social.scss";
 @import "site-list.scss";
 @import "page-main.scss";
@@ -28,5 +29,10 @@
 @import "catalog-main.scss";
 @import "about-us.scss";
 @import "user-form.scss";
+@import "user-form__wrapper-type.scss";
+@import "user-form__wrapper-color.scss";
+@import "user-form__wrapper-fio.scss";
+@import "user-form__wrapper-contacts.scss";
+@import "user-form__wrapper-extra.scss";
 @import "product-catalog.scss";
 @import "main-nav__sale-list.scss";

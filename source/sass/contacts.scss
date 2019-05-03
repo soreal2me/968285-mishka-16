@@ -1,5 +1,14 @@
+.contacts {
+  padding-left: 30px;
+  padding-right: 30px;
+
+  margin-bottom: 40px;
+}
+
 .contacts__heading {
   @include font(bold, 18px, 30px);
+
+  margin: 0;
 }
 
 .contacts__e-mail,
@@ -8,9 +17,38 @@
 .contacts__adress-text {
   @include font(normal, 15px, 30px);
   color: #444444;
+
+  margin: 0;
 }
 
 .contacts__write-us {
   @include font(bold, 18px, 20px);
   color: #444444;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    padding-left: 50px;
+    padding-right: 50px;
+
+  }
+
+  .contacts__heading {
+    @include font(bold, 43px, 50px);
+  }
+
+  .contacts__e-mail,
+  .contacts__e-mail-name,
+  .contacts__adress,
+  .contacts__adress-text {
+    font-size: 17px;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__heading {
+    @include font(bold, 53px, 57px);
+  }
+
 }
