@@ -1,6 +1,7 @@
 .feedback {
   padding-left: 30px;
   padding-right: 30px;
+  padding-bottom: 90px;
 }
 
 .feedback__heading {
@@ -32,4 +33,50 @@
 .feedback__write {
   @include font(bold, 18px, 20px);
   color: #444444;
+}
+
+.feedback__background {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    padding: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 200px;
+  }
+
+  .feedback__heading {
+    @include font(bold, 43px, 50px);
+  }
+
+  .feedback__description {
+    @include font(normal, 17px, 30px);
+  }
+
+  .feedback__background {
+    display: inline;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback {
+    padding: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 230px;
+  }
+
+  .feedback__heading {
+    @include font(bold, 53px, 57px);
+  }
+
+  .feedback__background {
+    display: inline;
+  }
 }

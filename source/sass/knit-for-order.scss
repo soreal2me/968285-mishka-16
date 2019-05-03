@@ -1,8 +1,62 @@
+.knit-for-order {
+  display: inline-block;
+  width: 320px;
+}
+
 .knit-for-order__heading {
   @include font(bold, 27px, 30px);
   background-color: #f1f1f1;
+
+  width: 260px;
+  padding: 70px 30px 65px 30px;
+  margin: 0;
+  margin-bottom: 30px;
+  display: inline-block;
 }
 
 .knit-for-order__text {
   @include font(normal, 13px, 24px);
+
+  width: 260px;
+  margin: 0;
+  display: inline-block;
+  padding: 0 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .knit-for-order {
+    width: 768px;
+  }
+
+  .knit-for-order__heading {
+    width: 400px;
+    padding: 90px 185px 90px 185px;
+    margin: 0;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .knit-for-order__text {
+    font-size: 17px;
+    line-height: 30px;
+
+    width: 615px;
+    padding: 60px 105px 60px 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .knit-for-order__heading {
+    font-size: 53px;
+    line-height: 57px;
+
+    width: 485px;
+    padding: 90px 332px 130px 332px;
+  }
+
+  .knit-for-order__text {
+    width: 680px;
+    padding: 100px 250px 60px 220px;
+  }
 }
