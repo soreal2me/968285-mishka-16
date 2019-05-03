@@ -30,7 +30,6 @@
   .contacts {
     padding-left: 50px;
     padding-right: 50px;
-
   }
 
   .contacts__heading {
@@ -43,12 +42,10 @@
   .contacts__adress-text {
     font-size: 17px;
   }
-
 }
 
 @media (min-width: $desktop-width) {
   .contacts__heading {
     @include font(bold, 53px, 57px);
   }
-
 }
